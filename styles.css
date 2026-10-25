@@ -92,6 +92,32 @@ nav a:hover {
   background: #ffb820;
 }
 
+.results {
+  padding: 2.5rem 0;
+  background: #181818;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.result-grid strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #f0a700;
+  margin-bottom: 0.25rem;
+}
+
+.result-grid span {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
 section {
   padding: 4.5rem 0;
 }
@@ -209,5 +235,8 @@ footer {
   }
   .hero {
     padding: 4rem 0 3rem;
+  }
+  .result-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
